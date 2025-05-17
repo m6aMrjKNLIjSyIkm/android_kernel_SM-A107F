@@ -4,24 +4,6 @@ on:
 
   workflow_dispatch:
 
-  schedule:
-
-      # 每周周六00:00运行. 时间设置参考： http://crontab.guru
-
-      - cron: '0 0 * * 6'
-
-  push:
-
-    branches:
-
-      - HEAD
-
-  pull_request:
-
-      branches:
-
-      - HEAD
-
 jobs:
 
   build:
